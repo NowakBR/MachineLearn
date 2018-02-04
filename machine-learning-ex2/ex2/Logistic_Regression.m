@@ -28,20 +28,16 @@ plot(g);
 xlabel('Iteration'); ylabel('Sigmoid Function');
 
 figure(3)
-plot(Z);
-xlabel('Iteration'); ylabel('Sorted Random Number');
-
-figure(3)
-plot(G);
-xlabel('Iteration'); ylabel('Sorted Sigmoid Function');
-
-figure(4)
 plot(z,g);
 xlabel('Random Number'); ylabel('Sigmoid Function');
 
+figure(4)
+plot(Z);
+xlabel('Iteration'); ylabel('Sorted Random Number');
+
 figure(5)
-plot(z,s);
-xlabel('Random Number'); ylabel('Sigmoid Function');
+plot(G);
+xlabel('Iteration'); ylabel('Sorted Sigmoid Function');
 
 figure(6)
 plot(Z,G);

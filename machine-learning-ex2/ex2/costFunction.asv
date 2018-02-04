@@ -22,15 +22,13 @@ grad = zeros(size(theta));
 
 %
 
-% This is the first 2 eqns on page 4 using sigmoid.m
-    SigM = sigmoid(X * theta); 
+SigM = sigmoid(X * theta); % This is the first 2 eqns on page 4 using sigmoid.m
 
 % Logistic cost function. The 3rd equation on page 4.
-% The summation is implied by the matrix math.
-    J = 1 / m * (-y' * log(SigM) - (1 - y') * log(1 - SigM));
+J = 1 / m * (-y' * log(SigM) - (1 - y') * log(1 - SigM)); 
 
-% Gradient of the cost function.  The 1st equation on page 5.
-    grad = 1 / m * ((SigM - y)' * X)';
+
+grad = 1 / m * ((SigM - y)' * X)';
 
 
 % =============================================================
